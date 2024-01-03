@@ -46,7 +46,7 @@
 		"rollup": "^3.9.1",
 		"rollup-plugin-cleaner": "^1.0.0",
 		"rollup-plugin-copy": "^3.4.0",
-		"rollup-plugin-uglify": "^6.0.4",
+		"rollup-plugin-uglify": "^5.0.2",
 		"ts-lit-plugin": "^2.0.1",
 		"typescript": "^4.9.5"
 	}
