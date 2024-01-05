@@ -15,8 +15,11 @@ export class Confetti extends LitElement {
 	@property({ type: String })
 	declare sampleProperty: string;
 
+	@property({ type: Boolean })
+	declare startPartyTrigger: boolean;
+
 	@property({ type: String })
-	declare partyText: string;
+	declare typeofEffect: string;
 
 	constructor() {
 		super();
@@ -24,10 +27,11 @@ export class Confetti extends LitElement {
 	}
 
 	override render() {
-		return html`
-			<div id="party-container">${this.partyText}</div>
-			<button @click="${this.startParty}">Start Party</button>
-		`;
+		if (this.startPartyTrigger === true) {
+			this.startParty();
+		}
+
+		return html` <div id="party-container"></div> `;
 	}
 
 	// Function to start the party using party.js
@@ -35,10 +39,16 @@ export class Confetti extends LitElement {
 		const container = this.shadowRoot?.getElementById('party-container');
 
 		if (container) {
-			party.sparkles(container, {
-				count: 50,
-				speed: party.variation.range(50, 300),
-			});
+			if (this.typeofEffect === 'Sparkle') {
+				party.sparkles(container, {
+					count: 50,
+					speed: party.variation.range(50, 300),
+				});
+			} else {
+				party.confetti(container, {
+					count: party.variation.range(20, 60),
+				});
+			}
 		}
 	}
 }

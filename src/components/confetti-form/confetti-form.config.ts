@@ -7,17 +7,19 @@ export const config: PluginContract = {
 	description: 'Enjoy the Confetti on the Form to celebrate',
 	version: '1.0',
 	properties: {
-		partyText: {
+		startPartyTrigger: {
+			type: 'boolean',
+			title: 'Enable the Effect',
+		},
+		typeofEffect: {
 			type: 'string',
-			title: 'Enter your Text here',
+			enum: ['Confetti', 'Sparkle'],
+			title: 'Select the Effect	',
 		},
 	},
 	events: ['ntx-value-change'],
 	standardProperties: {
 		fieldLabel: true,
-		description: true,
 		defaultValue: true,
-		readOnly: true,
-		visibility: true,
 	},
 };
