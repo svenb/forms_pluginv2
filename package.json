@@ -18,7 +18,8 @@
 		"@nintex/form-plugin-contract": "^1.0.0-beta.2",
 		"@open-wc/scoped-elements": "^1.3.3",
 		"lit": "^2.8.0",
-		"party-js": "^2.2.0"
+		"party-js": "^2.2.0",
+		"qr-scanner": "^1.4.2"
 	},
 	"devDependencies": {
 		"@azure/storage-blob": "^12.16.0",

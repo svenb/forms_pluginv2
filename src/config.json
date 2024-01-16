@@ -1,9 +1,1 @@
-{
-	"group": "Starter Kit",
-	"plugins": {
-		"sk-hello-world": "Hello World",
-		"test-s": "GoogleMapsMapv2",
-		"googlemap-maps": "Google Maps Map v2",
-		"confetti-form": "Confetti Plugin v2"
-	}
-}
+{"group":"Starter Kit","plugins":{"sk-hello-world":"Hello World","test-s":"GoogleMapsMapv2","googlemap-maps":"Google Maps Map v2","confetti-form":"Confetti Plugin v2","webcam-qrcode":"Webcam and QRCode Scanner"}}
